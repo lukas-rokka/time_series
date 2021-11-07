@@ -9,8 +9,8 @@ ENTSO-E Transparency FTP:
     Actual Generation per Production Type:
         host: 'sftp-transparency.entsoe.eu'
         port: 22
-        path: TP_export/AggregatedGenerationPerType/
-        filename: '{u_start.year}_{u_start.month}_AggregatedGenerationPerType.csv'
+        path: TP_export/AggregatedGenerationPerType_16.1.B_C/
+        filename: '{u_start:%Y_%m}_AggregatedGenerationPerType_16.1.B_C.csv'
         frequency: monthly
         start: 2014-12-01
         end: recent
@@ -42,8 +42,8 @@ ENTSO-E Transparency FTP:
     Actual Total Load:
         host: 'sftp-transparency.entsoe.eu'
         port: 22
-        path: TP_export/ActualTotalLoad/
-        filename: '{u_start.year}_{u_start.month}_ActualTotalLoad.csv'
+        path: TP_export/ActualTotalLoad_6.1.A/
+        filename: '{u_start:%Y_%m}_ActualTotalLoad_6.1.A.csv'
         frequency: monthly
         start: 2014-12-01
         end: recent
@@ -69,8 +69,8 @@ ENTSO-E Transparency FTP:
     Day-ahead Total Load Forecast:
         host: 'sftp-transparency.entsoe.eu'
         port: 22
-        path: TP_export/DayAheadTotalLoadForecast/
-        filename: '{u_start.year}_{u_start.month}_DayAheadTotalLoadForecast.csv'
+        path: TP_export/DayAheadTotalLoadForecast_6.1.B/
+        filename: '{u_start:%Y_%m}_DayAheadTotalLoadForecast_6.1.B.csv'
         frequency: monthly
         start: 2014-12-01
         end: recent
@@ -96,8 +96,8 @@ ENTSO-E Transparency FTP:
     Day-ahead Prices:
         host: 'sftp-transparency.entsoe.eu'
         port: 22
-        path: TP_export/DayAheadPrices/
-        filename: '{u_start.year}_{u_start.month}_DayAheadPrices.csv'
+        path: TP_export/DayAheadPrices_12.1.D/
+        filename: '{u_start:%Y_%m}_DayAheadPrices_12.1.D.csv'
         frequency: monthly
         start: 2014-12-01
         end: recent
@@ -1179,8 +1179,11 @@ Elexon:
             - url: https://downloads.elexonportal.co.uk/file/download/26347
               start: 2020-01-01
               end: 2020-12-31
+            - url: https://downloads.elexonportal.co.uk/file/download/28224
+              start: 2021-01-01
+              end: recent              
         start: 2005-01-01
-        end: 2018-12-31
+        end: 2021-11-96
         frequency: file list
         filetype: csv
         resolution:
